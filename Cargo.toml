@@ -1,0 +1,24 @@
+[package]
+name = "rstop"
+version = "0.0.1"
+edition = "2021"
+license = "MIT OR Apache-2.0"
+license-file = "LICENSE.md"
+readme = "README.md"
+categories = ["command-line-utilities"]
+repository = "https://github.com/dragon9786/rstop"
+description = "A simple alternative to htop"
+
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = {version = "3.2.22",  features = ["derive"]}
+futures = "0.3.23"
+tokio = {version = "1.21.1", features= ["full"]}
+sysinfo = {version="0.26.2", default-features = false}
+tabled = {version="0.8.0", features=["color"]}
+termion = "1.5.6"
+colorful = "0.2.1"
+itertools = "0.10.5"
